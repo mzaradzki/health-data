@@ -40,6 +40,10 @@ $  cd dicom
 $  7z x sample_images.7z
 ```
 
+**STORAGE** :
+To deal with the real data set we can mount an AWS EFS (elastic file system) to the EC2 instance.
+This point is detailed in the above ec2 configuration link.
+
 
 Installed pydicom package with pip
 
