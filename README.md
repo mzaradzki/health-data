@@ -46,7 +46,7 @@ Installed pydicom package with pip
 In Python shell :
 ```python
 >>> import dicom
->>> patientname =”0d941a3ad6c889ac451caf89c46cb92a“
+>>> patientname ="0d941a3ad6c889ac451caf89c46cb92a"
 >>> filename = "fff9f74b698cc82f1d39fe043746940c.dcm"
 >>> ds = dicom.read_file("dicom/”+patientname+”/”+filename)
 >>> ds.pixel_array.shape # a 512x512 slice
