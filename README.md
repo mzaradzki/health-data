@@ -59,7 +59,17 @@ In Python shell :
 
 
 ** UPDATE KERAS VERSION** :
+
 pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
+
+Keras may raise an error about *shape* :
+
+"The shape of the input to "Flatten" is not fully defined"
+
+This issue is described and solved on git (https://github.com/fchollet/keras/issues/3850) as follow :
+
+"Compare the file ~/.keras/keras.json between your workstations. If they differ set image_dim_ordering to "th" (your tutorial seems to be using the theano backend) and try again."
+
 
 
 Install **bcolz** as required by some utilities copied from FastAI mooc repo :
