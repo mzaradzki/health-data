@@ -56,3 +56,9 @@ In Python shell :
 >>> ds.pixel_array.shape # a 512x512 slice
 >>> ds.pixel_array.min(), ds.pixel_array.max() # to see which range
 ```
+
+
+** UPDATE KERAS VERSION** :
+pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
+
+
