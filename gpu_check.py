@@ -3,6 +3,13 @@ import theano.tensor as T
 import numpy
 import time
 
+
+# See this page : http://deeplearning.net/software/theano/tutorial/using_gpu.html
+# From console :
+# $  THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python gpu_check.py
+# $  THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python gpu_check.py
+
+
 def test():
     vlen = 10 * 30 * 768  # 10 x #cores x # threads per core
     iters = 1000
@@ -23,3 +30,7 @@ def test():
     else:
         print('Used the gpu')
         return True
+
+
+if __name__ == "__main__":
+    t = test()
