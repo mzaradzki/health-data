@@ -1,0 +1,6 @@
+# Compiled source #
+###################
+*.dll
+*.exe
+*.pyc
+.ipynb_checkpoints
