@@ -18,7 +18,7 @@ $  kg download -c "data-science-bowl-2017" -f "sample_images.7z"
 ```
 
 
-Install 7z utilities :
+Install **7z** utilities :
 
 ```
 $  sudo apt-get update
@@ -45,7 +45,7 @@ To deal with the real data set we can mount an AWS EFS (elastic file system) to 
 This point is detailed in the above ec2 configuration link.
 
 
-Installed pydicom package with pip
+Installed **pydicom** package with pip
 
 In Python shell :
 ```python
@@ -61,4 +61,9 @@ In Python shell :
 ** UPDATE KERAS VERSION** :
 pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
 
+
+Install **bcolz** as required by some utilities copied from FastAI mooc repo :
+```
+$  pip install -U bcolz
+```
 
