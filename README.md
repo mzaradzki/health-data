@@ -58,10 +58,10 @@ In Python shell :
 ```
 
 
-** UPDATE KERAS VERSION** :
-
-pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
-
+**UPDATE KERAS VERSION** :
+```
+$  pip install git+git://github.com/fchollet/keras.git --upgrade --no-deps
+```
 Keras may raise an error about *shape* :
 
 "The shape of the input to "Flatten" is not fully defined"
@@ -76,4 +76,13 @@ Install **bcolz** as required by some utilities copied from FastAI mooc repo :
 ```
 $  pip install -U bcolz
 ```
+
+
+**LAUNCHING JUPYTER WITH GPU FOR THEANO** :
+```
+$  THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 jupyter notebook
+```
+Further settings optimization here :
+http://deeplearning.net/software/theano/tutorial/using_gpu.html
+
 
